@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f7;
+    color: #555;
+    padding: 25px;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c47f96;
+}
+.container,
+.dashboard,
+.content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(190, 140, 155, 0.15);
+}
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 7px;
+    border: 1px solid #ead2da;
+    border-radius: 6px;
+    font-size: 14px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #d9a2b3;
+}
+button,
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #d9a2b3;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+button:hover,
+.btn:hover {
+    background: #c4869b;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+th {
+    background: #efd6df;
+    color: #805365;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #f0dfe5;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background: #fff8fa;
+}
+a {
+    color: #bd8297;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+.menu a {
+    display: block;
+    padding: 15px;
+    background: #e8bdcb;
+    color: #704858;
+    text-align: center;
+    border-radius: 7px;
+}
+.menu a:hover {
+    background: #d9a2b3;
+    text-decoration: none;
+}
+.hapus,
+.logout {
+    background: #d99a9a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.hapus:hover,
+.logout:hover {
+    background: #c77f83;
+    text-decoration: none;
+}
+.edit {
+    background: #d99a9a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container,
+    .dashboard,
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
